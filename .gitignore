@@ -5,3 +5,5 @@
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 ._.DS_Store
+creds.h
+.DS_Store

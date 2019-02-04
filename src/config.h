@@ -1,9 +1,4 @@
-/************************ Adafruit IO Config *******************************/
-
-// visit io.adafruit.com if you need to create an account,
-// or if you need your Adafruit IO key.
-#define IO_USERNAME    "ProfeC"
-#define IO_KEY         "xxxxxxxxxxxxx"
+#include "creds.h"
 
 /******************************* WIFI **************************************/
 
@@ -14,13 +9,6 @@
 //   - Feather M0 WiFi -> https://www.adafruit.com/products/3010
 //   - Feather WICED -> https://www.adafruit.com/products/3056
 
-// Home
-// #define WIFI_SSID       "xxxxxxxxxxxxx"
-// #define WIFI_PASS       "xxxxxxxxxxxxx"
-
-// Work
-#define WIFI_SSID       "xxxxxxxxxxxxx"
-#define WIFI_PASS       "xxxxxxxxxxxxx"
 
 // comment out the following two lines if you are using fona or ethernet
 #include "AdafruitIO_WiFi.h"
