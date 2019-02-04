@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/clarkgar/.platformio/penv/bin:/Users/clarkgar/.platformio/penv:/usr/local/sbin:/Users/clarkgar/.dotfiles/bin:/Users/clarkgar/.gem/ruby/2.3.0/bin:/Users/clarkgar/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/clarkgar/.yarn/bin",
+        "PLATFORMIO_CALLER": "vscode"
+    }
+}
