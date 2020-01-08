@@ -39,6 +39,11 @@ void setup() {
 	// Serial.print('Chip ID = ' + chipID);
 	// Serial.println('====');
 	// Serial.println('DNS Name = ' + dnsName);
+	
+	const char chipID = ESP.getChipId(); // The ESP's Chip ID
+	Serial.print("\n\n\n========= ");
+	Serial.print(chipID);
+	Serial.print(" =========\n\n\n");
 
 	// Turn off LED
 	updateLED(1023, 1023, 1023);
@@ -46,19 +51,20 @@ void setup() {
 	// Start sensors
 	hdc.begin();
 
-	Serial.println("\nSetting up HDC100x...");
+	Serial.println("\n\nSetting up HDC100x...\n");
 	Wire.begin(TEMPERATURE_DATA, TEMPERATURE_CLOCK);
 	if (!hdc.begin()) {
-		Serial.println("\nCouldn't find sensor!");
+		Serial.println("\n=== Couldn't find sensor! ===\n");
 	while (1);
 	}
 
 	// connect to io.adafruit.com
-	Serial.print("Connecting to Adafruit IO");
+	Serial.print("\n\n===\nConnecting to Adafruit IO\n");
 	// io.connect();
 
 	// wait for a connection
 	while(io.status() < AIO_CONNECTED) {
+		Serial.print("\n");
 		Serial.println(io.statusText());
 		delay(500);
 	}
