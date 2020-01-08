@@ -34,7 +34,7 @@ AdafruitIO_Feed *humidity = io.feed("humidity");
 
 void setup() {
 	// Set up serial monitor
-	Serial.begin(115200 );
+	Serial.begin(115200);
 
 	// Serial.print('Chip ID = ' + chipID);
 	// Serial.println('====');
@@ -55,7 +55,7 @@ void setup() {
 
 	// connect to io.adafruit.com
 	Serial.print("Connecting to Adafruit IO");
-	io.connect();
+	// io.connect();
 
 	// wait for a connection
 	while(io.status() < AIO_CONNECTED) {
